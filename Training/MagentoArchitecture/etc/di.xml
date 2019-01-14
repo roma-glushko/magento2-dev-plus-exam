@@ -6,6 +6,29 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="TrainingConfigData" type="Magento\Framework\Config\Data">
+        <arguments>
+            <argument name="reader" xsi:type="object">Training\MagentoArchitecture\Model\Config\Training\Reader</argument>
+            <argument name="cacheId" xsi:type="string">training_config</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="TrainingConfigSchemaLocator" type="Magento\Framework\Config\GenericSchemaLocator">
+        <arguments>
+            <argument name="moduleName" xsi:type="string">Training_MagentoArchitecture</argument>
+            <argument name="schema" xsi:type="string">training_config.xsd</argument>
+            <argument name="perFileSchema" xsi:type="string">training_config.xsd</argument>
+        </arguments>
+    </virtualType>
+    <type name="Training\MagentoArchitecture\Model\Config\Training\Reader">
+        <arguments>
+            <argument name="schemaLocator" xsi:type="object">TrainingConfigSchemaLocator</argument>
+        </arguments>
+    </type>
+    <type name="Training\MagentoArchitecture\Console\TrainingCommand">
+        <arguments>
+            <argument name="trainingConfigReader" xsi:type="object">TrainingConfigData</argument>
+        </arguments>
+    </type>
     <type name="Magento\Framework\Console\CommandListInterface">
         <arguments>
             <argument name="commands" xsi:type="array">

@@ -8,6 +8,7 @@ namespace Training\MagentoArchitecture\Model\Config\Training;
 
 use Magento\Framework\Config\Dom as ConfigDom;
 use Magento\Framework\Config\FileResolverInterface;
+use Magento\Framework\Config\GenericSchemaLocator;
 use Magento\Framework\Config\Reader\Filesystem as FilesystemReader;
 use Magento\Framework\Config\ValidationStateInterface;
 
@@ -25,7 +26,7 @@ class Reader extends FilesystemReader
     /**
      * @param FileResolverInterface $fileResolver
      * @param Converter $converter
-     * @param SchemaLocator $schemaLocator
+     * @param GenericSchemaLocator $schemaLocator
      * @param ValidationStateInterface $validationState
      * @param string $fileName
      * @param array $idAttributes
@@ -35,7 +36,7 @@ class Reader extends FilesystemReader
     public function __construct(
         FileResolverInterface $fileResolver,
         Converter $converter,
-        SchemaLocator $schemaLocator,
+        GenericSchemaLocator $schemaLocator,
         ValidationStateInterface $validationState,
         $fileName = 'training_config.xml',
         $idAttributes = [],

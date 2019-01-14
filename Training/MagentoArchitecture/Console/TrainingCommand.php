@@ -8,27 +8,26 @@ namespace Training\MagentoArchitecture\Console;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Command\Command as ConsoleCommand;
-use Training\MagentoArchitecture\Model\Config\Training\Data as TrainingConfigData;
-use Training\MagentoArchitecture\Model\Config\Training\Data\Proxy as TrainingConfigDataProxy;
+use Magento\Framework\Config\Data as ConfigData;
 
 class TrainingCommand extends ConsoleCommand
 {
     /**
-     * @var TrainingConfigData|TrainingConfigDataProxy
+     * @var ConfigData
      */
-    protected $trainingConfigData;
+    protected $trainingConfigReader;
 
     /**
-     * @param TrainingConfigData $trainingConfigData
+     * @param ConfigData $trainingConfigReader
      * @param null|string $name
      */
     public function __construct(
-        TrainingConfigDataProxy $trainingConfigData,
+        ConfigData $trainingConfigReader,
         string $name = null
     ) {
         parent::__construct($name);
 
-        $this->trainingConfigData = $trainingConfigData;
+        $this->trainingConfigReader = $trainingConfigReader;
     }
 
     /**
@@ -44,6 +43,6 @@ class TrainingCommand extends ConsoleCommand
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        var_dump($this->trainingConfigData->get());
+        var_dump($this->trainingConfigReader->get());
     }
 }

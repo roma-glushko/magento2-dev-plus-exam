@@ -6,9 +6,10 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Training Config -->
     <virtualType name="TrainingConfigData" type="Training\MagentoArchitecture\Model\Config\Training\ScopedData">
         <arguments>
-            <argument name="reader" xsi:type="object">Training\MagentoArchitecture\Model\Config\Training\Reader</argument>
+            <argument name="reader" xsi:type="object">Training\MagentoArchitecture\Model\Config\Training\Reader\Proxy</argument>
             <argument name="cacheId" xsi:type="string">training_config</argument>
         </arguments>
     </virtualType>
@@ -27,8 +28,17 @@
     <type name="Training\MagentoArchitecture\Console\TrainingCommand">
         <arguments>
             <argument name="trainingConfigReader" xsi:type="object">TrainingConfigData</argument>
+            <!--<argument name="trainingConfigReader" xsi:type="object">RemoteSchemaConfigData</argument>-->
         </arguments>
     </type>
+    <!-- Remote Schema Config -->
+    <virtualType name="RemoteSchemaConfigData" type="Magento\Framework\Config\Data">
+        <arguments>
+            <argument name="reader" xsi:type="object">Training\MagentoArchitecture\Model\Config\RemoteSchema\Reader\Proxy</argument>
+            <argument name="cacheId" xsi:type="string">remote_schema_config</argument>
+        </arguments>
+    </virtualType>
+    <!-- Custom CLI Commands -->
     <type name="Magento\Framework\Console\CommandListInterface">
         <arguments>
             <argument name="commands" xsi:type="array">

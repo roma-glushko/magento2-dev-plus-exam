@@ -6,7 +6,7 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <virtualType name="TrainingConfigData" type="Magento\Framework\Config\Data">
+    <virtualType name="TrainingConfigData" type="Training\MagentoArchitecture\Model\Config\Training\ScopedData">
         <arguments>
             <argument name="reader" xsi:type="object">Training\MagentoArchitecture\Model\Config\Training\Reader</argument>
             <argument name="cacheId" xsi:type="string">training_config</argument>

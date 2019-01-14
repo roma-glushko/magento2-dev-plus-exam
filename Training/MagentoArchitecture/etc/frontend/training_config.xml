@@ -6,8 +6,5 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
-    <training_config id="training/topic/name" value="Magento Architecture" />
-    <training_config id="training/author/name" value="Roman Glushko" />
-    <training_config id="training/author/company" value="Atwix" />
-    <training_config id="training/scope/code" value="global" />
+    <training_config id="training/scope/code" value="frontend" />
 </config>

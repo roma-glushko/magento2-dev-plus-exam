@@ -34,3 +34,10 @@ virtual types, shared objects, object instantiation process, proxies, factories
 - Create a new CLI-command, configure it in di.xml, add optional/required options/keys
 - Environment specification using Area class
 - Environment emulation for a section of code
+
+## Tasks
+
+1. Implement supporting of a custom config that will be stored in own XML files.
+Files are needed to be validated. 
+There should be an ability to override value of custom configs from other modules/areas.
+Add a CLI command to print all registered configs in the system.

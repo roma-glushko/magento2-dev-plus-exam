@@ -35,7 +35,8 @@ class TrainingCommand extends ConsoleCommand
      */
     protected function configure()
     {
-        $this->setName('training:get-training-config')->setDescription('M2CPD+ Training Console Command');
+        $this->setName('training:get-training-config');
+        $this->setDescription('M2CPD+ Training Console Command');
     }
 
     /**

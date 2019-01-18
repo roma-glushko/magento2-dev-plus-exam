@@ -38,11 +38,18 @@
             <argument name="cacheId" xsi:type="string">remote_schema_config</argument>
         </arguments>
     </virtualType>
+    <!-- Interceptor Practice -->
+    <type name="Training\MagentoArchitecture\Model\Service\SpreadSomeLoveService">
+        <plugin name="training_magentoarchitecture_adjust_spread_some_love_a" type="Training\MagentoArchitecture\Plugin\AdjustSpreadSomeLoveAPlugin" sortOrder="10" />
+        <plugin name="training_magentoarchitecture_adjust_spread_some_love_b" type="\Training\MagentoArchitecture\Plugin\AdjustSpreadSomeLoveBPlugin" sortOrder="20"/>
+        <plugin name="training_magentoarchitecture_adjust_spread_some_love_c" type="\Training\MagentoArchitecture\Plugin\AdjustSpreadSomeLoveCPlugin" sortOrder="30"/>
+    </type>
     <!-- Custom CLI Commands -->
     <type name="Magento\Framework\Console\CommandListInterface">
         <arguments>
             <argument name="commands" xsi:type="array">
-                <item name="training-command" xsi:type="object">Training\MagentoArchitecture\Console\TrainingCommand</item>
+                <item name="training_magentoarchitecture_training_command" xsi:type="object">Training\MagentoArchitecture\Console\TrainingCommand</item>
+                <item name="training_magentoarchitecture_spread_some_love_command" xsi:type="object">Training\MagentoArchitecture\Console\SpreadSomeLoveCommand</item>
             </argument>
         </arguments>
     </type>

@@ -6,6 +6,7 @@
 
 namespace Training\MagentoArchitecture\Console;
 
+use Magento\Backend\App\Area\FrontNameResolver as BackendFrontNameResolver;
 use Magento\Framework\App\AreaList;
 use Magento\Framework\App\State as AppState;
 use Magento\Framework\Console\Cli;
@@ -104,13 +105,18 @@ class AdvancedTrainingCommand extends ConsoleCommand
 
         // Changing area
 
-        // $this->areaList->getArea();
+//        $area = $this->areaList->getArea(BackendFrontNameResolver::AREA_CODE);
+//        $area->load();
 
         // Emulating code in specific area
 
-        // $this->appState->emulateAreaCode();
+//        $this->appState->emulateAreaCode(
+//            BackendFrontNameResolver::AREA_CODE,
+//            [$this, 'someMethod'],
+//            []
+//        );
 
-        return Cli::RETURN_FAILURE;
+        return Cli::RETURN_SUCCESS;
     }
 
     /**

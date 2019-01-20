@@ -53,6 +53,7 @@
             <argument name="commands" xsi:type="array">
                 <item name="training_magentoarchitecture_training_command" xsi:type="object">Training\MagentoArchitecture\Console\TrainingCommand</item>
                 <item name="training_magentoarchitecture_spread_some_love_command" xsi:type="object">Training\MagentoArchitecture\Console\SpreadSomeLoveCommand</item>
+                <item name="training_magentoarchitecture_advanced_training_command" xsi:type="object">Training\MagentoArchitecture\Console\AdvancedTrainingCommand</item>
             </argument>
         </arguments>
     </type>

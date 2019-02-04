@@ -1,0 +1,17 @@
+{
+    "name": "training/magento-ui",
+    "description": "N/A",
+    "require": {
+        "magento/framework": "101.0.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Training\\MagentoUi\\": ""
+        }
+    }
+}

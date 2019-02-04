@@ -42,3 +42,4 @@ Files are needed to be validated.
 There should be an ability to override value of custom configs from other modules/areas.
 Add a CLI command to print all registered configs in the system.
 2. Log every first view of category view page.
+3. TBD

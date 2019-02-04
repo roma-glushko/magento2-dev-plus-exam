@@ -4,6 +4,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'Training_MagentoArchitecture',
+    'Training_WorkingWithDatabases',
     __DIR__
 );

@@ -7,6 +7,8 @@ use Symfony\Component\Console\Command\Command as ConsoleCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Training\WorkingWithDatabases\Model\TodoModel;
+use Training\WorkingWithDatabases\Model\ExtensibleTodoModel;
+use Training\WorkingWithDatabases\Model\ExtensibleTodoModelFactory;
 use Training\WorkingWithDatabases\Model\TodoModelFactory;
 use Training\WorkingWithDatabases\Model\ResourceModel\TodoResource;
 
@@ -23,11 +25,18 @@ class AddTodoCommand extends ConsoleCommand
     protected $todoModelFactory;
 
     /**
+     * @var ExtensibleTodoModelFactory
+     */
+    protected $todoExtensibleModelFactory;
+
+    /**
+     * @param ExtensibleTodoModelFactory $todoExtensibleModelFactory
      * @param TodoModelFactory $todoModelFactory
      * @param TodoResource $todoResource
      * @param string|null $name
      */
     public function __construct(
+        ExtensibleTodoModelFactory $todoExtensibleModelFactory,
         TodoModelFactory $todoModelFactory,
         TodoResource $todoResource,
         string $name = null
@@ -36,6 +45,7 @@ class AddTodoCommand extends ConsoleCommand
 
         $this->todoResource = $todoResource;
         $this->todoModelFactory = $todoModelFactory;
+        $this->todoExtensibleModelFactory = $todoExtensibleModelFactory;
     }
 
     /**

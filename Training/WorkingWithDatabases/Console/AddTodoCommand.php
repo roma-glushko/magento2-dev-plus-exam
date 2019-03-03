@@ -83,6 +83,15 @@ class AddTodoCommand extends ConsoleCommand
                 $output->writeln(sprintf('Todo has been saved (ID: #%s)', $todoModel->getId()));
             }
 
+            /**
+             * @var ExtensibleTodoModel $extensibleTask
+             */
+            $extensibleTask = $this->todoExtensibleModelFactory->create();
+
+            $extensibleTask->addData([
+                'message' => 'Need to buy some extensible milk',
+            ]);
+
         } catch (Exception $exception) {
             $output->writeln($exception->getMessage());
         }

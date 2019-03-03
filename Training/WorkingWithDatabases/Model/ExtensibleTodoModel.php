@@ -40,4 +40,26 @@ class ExtensibleTodoModel extends AbstractExtensibleModel
     {
         $this->_init(TodoResource::class);
     }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @return \Training\WorkingWithDatabases\Api\Data\TodoExtensionInterface|null
+     */
+    public function getExtensionAttributes()
+    {
+        return $this->_getExtensionAttributes();
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @param \Training\WorkingWithDatabases\Api\Data\TodoExtensionInterface $extensionAttributes
+     * @return $this
+     */
+    public function setExtensionAttributes(
+        \Training\WorkingWithDatabases\Api\Data\TodoExtensionInterface $extensionAttributes
+    ) {
+        return $this->_setExtensionAttributes($extensionAttributes);
+    }
 }

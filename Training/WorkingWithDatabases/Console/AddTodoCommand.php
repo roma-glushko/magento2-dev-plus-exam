@@ -6,6 +6,8 @@ use Exception;
 use Symfony\Component\Console\Command\Command as ConsoleCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Training\WorkingWithDatabases\Api\Data\TodoInterface;
+use Training\WorkingWithDatabases\Api\Data\TodoInterfaceFactory;
 use Training\WorkingWithDatabases\Model\TodoModel;
 use Training\WorkingWithDatabases\Model\ExtensibleTodoModel;
 use Training\WorkingWithDatabases\Model\ExtensibleTodoModelFactory;
@@ -30,22 +32,27 @@ class AddTodoCommand extends ConsoleCommand
     protected $todoExtensibleModelFactory;
 
     /**
-     * @param ExtensibleTodoModelFactory $todoExtensibleModelFactory
+     * @var TodoInterfaceFactory
+     */
+    protected $todoFactory;
+
+    /**
      * @param TodoModelFactory $todoModelFactory
      * @param TodoResource $todoResource
+     * @param TodoInterfaceFactory $todoFactory
      * @param string|null $name
      */
     public function __construct(
-        ExtensibleTodoModelFactory $todoExtensibleModelFactory,
         TodoModelFactory $todoModelFactory,
         TodoResource $todoResource,
+        TodoInterfaceFactory $todoFactory,
         string $name = null
     ) {
         parent::__construct($name);
 
         $this->todoResource = $todoResource;
         $this->todoModelFactory = $todoModelFactory;
-        $this->todoExtensibleModelFactory = $todoExtensibleModelFactory;
+        $this->todoFactory = $todoFactory;
     }
 
     /**
@@ -83,14 +90,14 @@ class AddTodoCommand extends ConsoleCommand
                 $output->writeln(sprintf('Todo has been saved (ID: #%s)', $todoModel->getId()));
             }
 
-            /**
-             * @var ExtensibleTodoModel $extensibleTask
-             */
-            $extensibleTask = $this->todoExtensibleModelFactory->create();
+            /** @var TodoInterface $todoData */
+            $todoData = $this->todoFactory->create();
 
-            $extensibleTask->addData([
-                'message' => 'Need to buy some extensible milk',
-            ]);
+            $todoData->setMessage('Need to buy some extensible milk');
+
+            // todo: use extensible attributes of ExtensibleTodoModel
+            $extensibleAttributes = $todoData->getExtensionAttributes();
+
 
         } catch (Exception $exception) {
             $output->writeln($exception->getMessage());

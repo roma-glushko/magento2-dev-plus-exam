@@ -3,12 +3,15 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Training\WorkingWithDatabases\Api\Data\TodoInterface" type="Training\WorkingWithDatabases\Model\Data\TodoData" />
+    <preference for="Training\WorkingWithDatabases\Api\Data\TodoSearchResultsInterface" type="Magento\Framework\Api\SearchResults" />
+    <preference for="Training\WorkingWithDatabases\Api\GetTodoListInterface" type="Training\WorkingWithDatabases\Model\Query\GetTodoListQuery" />
     <!-- Custom CLI Commands -->
     <type name="Magento\Framework\Console\CommandListInterface">
         <arguments>
             <argument name="commands" xsi:type="array">
                 <item name="training_workingwithdatabases_todo" xsi:type="object">Training\WorkingWithDatabases\Console\AddTodoCommand</item>
                 <item name="training_workingwithdatabases_loadextensiblecollection" xsi:type="object">Training\WorkingWithDatabases\Console\LoadExtensibleCollectionCommand</item>
+                <item name="training_workingwithdatabases_api" xsi:type="object">Training\WorkingWithDatabases\Console\SearchTodoConsole</item>
             </argument>
         </arguments>
     </type>

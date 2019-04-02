@@ -8,6 +8,9 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Training\WorkingWithDatabases\Api\GetTodoListInterface;
 
+/**
+ * An example of using API layer for looking up entities
+ */
 class SearchTodoConsole extends ConsoleCommand
 {
     /**

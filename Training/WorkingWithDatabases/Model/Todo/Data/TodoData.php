@@ -1,6 +1,6 @@
 <?php
 
-namespace Training\WorkingWithDatabases\Model\Data;
+namespace Training\WorkingWithDatabases\Model\Todo\Data;
 
 use Magento\Framework\Api\AbstractExtensibleObject;
 use Training\WorkingWithDatabases\Api\Data\TodoInterface;

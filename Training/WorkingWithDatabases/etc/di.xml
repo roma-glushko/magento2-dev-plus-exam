@@ -2,9 +2,9 @@
 <!--
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Training\WorkingWithDatabases\Api\Data\TodoInterface" type="Training\WorkingWithDatabases\Model\Data\TodoData" />
+    <preference for="Training\WorkingWithDatabases\Api\Data\TodoInterface" type="Training\WorkingWithDatabases\Model\Todo\Data\TodoData" />
     <preference for="Training\WorkingWithDatabases\Api\Data\TodoSearchResultsInterface" type="Magento\Framework\Api\SearchResults" />
-    <preference for="Training\WorkingWithDatabases\Api\GetTodoListInterface" type="Training\WorkingWithDatabases\Model\Query\GetTodoListQuery" />
+    <preference for="Training\WorkingWithDatabases\Api\GetTodoListInterface" type="Training\WorkingWithDatabases\Model\Todo\Query\GetTodoListQuery" />
     <!-- Custom CLI Commands -->
     <type name="Magento\Framework\Console\CommandListInterface">
         <arguments>

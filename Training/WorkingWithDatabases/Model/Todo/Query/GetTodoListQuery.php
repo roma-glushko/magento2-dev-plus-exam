@@ -1,6 +1,6 @@
 <?php
 
-namespace Training\WorkingWithDatabases\Model\Query;
+namespace Training\WorkingWithDatabases\Model\Todo\Query;
 
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Training\WorkingWithDatabases\Api\Data\TodoSearchResultsInterface;

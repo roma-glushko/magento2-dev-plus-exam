@@ -1,5 +1,5 @@
 <p align="center">
-    <h1>📚 Magento2 Certified Professional Developer Plus <br/> <small>[Exam Preparations]</small></h1>
+    <h1>📚 Magento2 Certified Professional Developer Plus</h1>
     <img src="https://img.shields.io/badge/WIP-Work%20In%20Progress-yellow.svg" />
 </p>
 

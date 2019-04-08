@@ -1,0 +1,13 @@
+{
+    "training_declarative_schema": {
+        "column": {
+            "entity_id": true,
+            "email": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

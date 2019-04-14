@@ -1,6 +1,7 @@
 <p align="center">
     <h1>📚 Magento2 Certified Professional Developer Plus</h1>
     <img src="https://img.shields.io/badge/WIP-Work%20In%20Progress-yellow.svg" />
+    <a href="https://u.magento.com/magento-2-certified-professional-developer-plus"><img src="https://img.shields.io/badge/Guide-Official%20Preparation%20Guide-orange.svg?logo=magento" /></a>
 </p>
 
 Here is my experience from preparing to the exam which looks like a list of modules related to each exam topic that helps me to build skills and knowledge required to pass the exam.

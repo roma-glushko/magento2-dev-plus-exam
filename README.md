@@ -16,3 +16,8 @@ Here is my experience from preparing to the exam which looks like a list of modu
 * Customizing the Checkout Process - To do 🔒
 * Magento Commerce Features - To do 🔒
 * Understanding Magento Security - To do 🔒
+
+## Maintainers
+
+* <a href="https://twitter.com/roma_glushko">Roman Glushko</a> - project creator, backend developer & tech lead at Atwix, Magento 2 Certified Solution Specialist & Magento 2 Certified Associate Developer
+* <a href="https://twitter.com/serhiy_zhovnir">Serhiy Zhovnir</a> - project maintainer, backend developer at Atwix, Magento 2 Certified Solution Specialist & Magento 2 Certified Associate Developer

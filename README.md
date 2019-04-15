@@ -4,7 +4,8 @@
     <a href="https://u.magento.com/magento-2-certified-professional-developer-plus"><img src="https://img.shields.io/badge/Guide-Official%20Preparation%20Guide-orange.svg?logo=magento" /></a>
 </p>
 
-Here is my experience from preparing to the exam which looks like a list of modules related to each exam topic that helps me to build skills and knowledge required to pass the exam.
+There are notes for those who preparing to pass Magento 2 Certified Professional Developer Plus exam. 
+Notes consist of modules for each content topic with useful code examples. Each modules has docs directory with super useful architectural diagrams which helps you to understand and remember how Magento works under the hood.
 
 ## Exam Details
 

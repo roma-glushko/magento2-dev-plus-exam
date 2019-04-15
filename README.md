@@ -24,6 +24,14 @@ Notes consist of modules for each content topic with useful code examples. Each 
 * Magento Commerce Features - To do 🔒
 * Understanding Magento Security - To do 🔒
 
+## Warranty
+
+We will do everything to share our knowledge and speed up your study process covering all needed topics and concepts.
+
+However, results of the exam depends only on YOU! 
+You need to do a tremendous work in working, learning and practicing before you are ready.
+There is no doubt, you will be ready and you will make it as everyone who already passed the exam. 
+
 ## Maintainers
 
 * <a href="https://twitter.com/roma_glushko">Roman Glushko</a> - project creator, backend developer & tech lead at Atwix, Magento 2 Certified Solution Specialist & Magento 2 Certified Associate Developer

@@ -6,6 +6,12 @@
 
 Here is my experience from preparing to the exam which looks like a list of modules related to each exam topic that helps me to build skills and knowledge required to pass the exam.
 
+## Exam Details
+
+* 60 multiple choice questions
+* 90 minutes to complete the exam
+* 62% or higher needed to pass
+
 ## Content
 * Magento Architecture - Covered ✅
 * Magento UI - In Progress👷‍♂️

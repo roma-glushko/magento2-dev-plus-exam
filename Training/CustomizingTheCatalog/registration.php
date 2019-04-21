@@ -6,6 +6,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'Training_DeclarativeSchema',
+    'Training_CustomizingTheCatalog',
     __DIR__
 );

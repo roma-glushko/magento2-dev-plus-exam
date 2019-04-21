@@ -6,7 +6,6 @@
 
 namespace Training\MagentoArchitecture\Console;
 
-use Magento\Backend\App\Area\FrontNameResolver as BackendFrontNameResolver;
 use Magento\Framework\App\AreaList;
 use Magento\Framework\App\State as AppState;
 use Magento\Framework\Console\Cli;

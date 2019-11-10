@@ -34,5 +34,39 @@ There is no doubt, you will be ready and you will make it as everyone who alread
 
 ## Maintainers
 
-* <a href="https://twitter.com/roma_glushko">Roman Glushko</a> - project creator, backend developer & tech lead at Atwix, Magento 2 Certified Solution Specialist & Magento 2 Certified Associate Developer
-* <a href="https://twitter.com/serhiy_zhovnir">Serhiy Zhovnir</a> - project maintainer, backend developer at Atwix, Magento 2 Certified Solution Specialist & Magento 2 Certified Associate Developer
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <img width="100" height="100" src="https://github.com/roma-glushko.png?s=150">
+        <br>
+        <a href="https://twitter.com/roma_glushko">Roman Glushko</a>
+        <br>
+        Project Creator, Backend Developer & Tech Lead at Atwix
+      </td>
+      <td>
+         <img src="https://u.magento.com/media/catalog/product/s/o/solution-specialist-l.png" height="84px" width="46px" />
+         <img src="https://u.magento.com/media/catalog/product/a/s/assoc_dev-l.png" height="84px" width="46px" />
+         <img src="https://u.magento.com/media/catalog/product/p/r/pro-cloud-dev-2x.png" height="84px" width="46px" />
+      </td>
+     </tr>
+     <tr>
+      <td align="center" valign="top">
+        <img width="100" height="100" src="https://github.com/serhiyzhovnir.png?s=150">
+        <br>
+        <a href="https://twitter.com/serhiy_zhovnir">Serhiy Zhovnir</a>
+        <br>
+        Project Maintainer, Full Stack Developer at Atwix
+      </td>
+      <td>
+          <img src="https://u.magento.com/media/catalog/product/s/o/solution-specialist-l.png" height="84px" width="46px" />
+          <img src="https://u.magento.com/media/catalog/product/a/s/assoc_dev-l.png" height="84px" width="46px" />
+          <img src="https://u.magento.com/media/catalog/product/p/r/pro_dev-l.png" height="84px" width="46px" />
+          <img src="https://u.magento.com/media/catalog/product/p/r/pro-js-dev-2x.png" height="84px" width="46px" />
+          <img src="https://u.magento.com/media/catalog/product/9/2/9286_update_m2_certified_pro_fe_developer_badge_r1v2.png" height="84px" width="46px" />
+           <img src="https://magento-u.magento.com/magento-u/downloads/Full-Stack.png" height="84px" width="46px" />
+      </td>
+     </tr>
+  </tbody>
+</table>
+

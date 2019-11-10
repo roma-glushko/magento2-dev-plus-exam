@@ -20,7 +20,7 @@ Notes consist of modules for each content topic with useful code examples. Each 
 * Using the Entity-Attribute-Value (EAV) Model - To do 🔒
 * Developing with Adminhtml - To do 🔒
 * Customizing the Catalog - In Progress 👷‍♂️
-* Customizing the Checkout Process - To do 🔒
+* Customizing the Checkout Process - In Progress 👷‍♂️
 * Magento Commerce Features - To do 🔒
 * Understanding Magento Security - To do 🔒
 

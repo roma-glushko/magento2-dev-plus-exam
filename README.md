@@ -48,6 +48,7 @@ There is no doubt, you will be ready and you will make it as everyone who alread
          <img src="https://u.magento.com/media/catalog/product/s/o/solution-specialist-l.png" height="84px" width="46px" />
          <img src="https://u.magento.com/media/catalog/product/a/s/assoc_dev-l.png" height="84px" width="46px" />
          <img src="https://u.magento.com/media/catalog/product/p/r/pro-cloud-dev-2x.png" height="84px" width="46px" />
+         <img src="https://u.magento.com/media/catalog/product/p/r/pro_dev-l.png" height="84px" width="46px" />
       </td>
      </tr>
      <tr>
